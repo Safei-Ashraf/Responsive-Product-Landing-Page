@@ -250,6 +250,7 @@ nav ul li:hover {
 		-moz-transition: transform 0.5s;
 		-ms-transition: transform 0.5s;
 		-o-transition: transform 0.5s;
+		box-shadow: none;
 	}
 	nav ul {
 		height: initial;
@@ -286,6 +287,7 @@ nav ul li:hover {
 		position: absolute;
 		width: 0;
 		height: 100vh;
+		right: 0;
 		background-color: rgba(0, 0, 0, 0.75);
 		transition: opacity 0.5s;
 		-webkit-transition: opacity 0.5s;
@@ -294,7 +296,29 @@ nav ul li:hover {
 		-o-transition: opacity 0.5s;
 	}
 	.overlay.menu-open {
-		width: 100%;
+		width: 50%;
 		opacity: 1;
+		z-index: 2;
+	}
+}
+@media screen and(max-width: 400px) {
+	.tone-two img {
+		left: -1rem;
+	}
+	.product-info h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.product-info p {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	.product-info h2 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+	.btn {
+		padding: 5rem;
+		font-size: 0.8rem;
 	}
 }
